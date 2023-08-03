@@ -1,7 +1,14 @@
+import ItemList from "./components/ItemList";
+import AddItemForm from "./components/AddItemForm";
+import EditItemForm from "./components/EditItemForm";
+
 export default function App() {
   return (
-    <p className="text-3xl">
+    <div className="">
       cra is slower than my college wifi
-    </p>
+      <ItemList />
+      <AddItemForm />
+      <EditItemForm />
+    </div>
   );
 }
