@@ -4,8 +4,7 @@ import EditItemForm from "./components/EditItemForm";
 
 export default function App() {
   return (
-    <div className="">
-      cra is slower than my college wifi
+    <div className="flex flex-col gap-5">
       <ItemList />
       <AddItemForm />
       <EditItemForm />
