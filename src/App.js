@@ -1,7 +1,21 @@
+import ItemList from "./components/ItemList";
+import AddItemForm from "./components/AddItemForm";
+import EditItemForm from "./components/EditItemForm";
+import Header from "./components/widgets/Header";
+import Footer from "./components/widgets/Footer";
+
 export default function App() {
   return (
-    <p className="text-3xl">
-      cra is slower than my college wifi
-    </p>
+    <div className="flex flex-col justify-between min-h-full md:min-h-fit md:h-screen">
+      <Header />
+      <div className="flex flex-col justify-between h-full">
+        <ItemList />
+        <div className="flex flex-col gap-6 my-8 md:gap-0 md:flex-row justify-evenly items-center md:my-auto">
+          <AddItemForm />
+          <EditItemForm />
+        </div>
+      </div>
+      <Footer />
+    </div>
   );
 }
